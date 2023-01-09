@@ -11,7 +11,7 @@ const Repo = ({
     language,
     html_url,
     forks_count,
-    stargazes_count,
+    stargazers_count,
 }: RepoProps) => {
   return (
     <div className={classes.repo}>
@@ -22,14 +22,14 @@ const Repo = ({
         <div className={classes.stats}>
             <div>
             <AiOutlineStar />
-            <span>{stargazes_count}</span>
+            <span>{stargazers_count}</span>
         </div>
         <div>
             <AiOutlineFork />
             <span>{forks_count}</span>
         </div>
     </div>
-    <a href={html_url} target="_blank" className={classes.repo.btn}>
+    <a href={html_url} target="_blank" className={classes.repo_btn}>
         <span>Ver código</span>
         <RiGitRepositoryLine />
     </a>
